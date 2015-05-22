@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+
+/* this is a comment */
+
+/* CSS Syntax:
+
+selector {
+	property: value;
+	property: value;
+
+}
+
+*/
+
+/* type selector */
+
+p { /* this is going to select all <p> elements */
+	font-size: 1em; /* use 16px, 12pt (not consistent), 100% (not consistent), 1em (advantage for using em's.. calculated em's is easy, just divide by 16) */
+	line-height: 1.5em;
+
+}
+
+figcaption {
+	/*
+	font-weight: normal;
+	font-size: .75em;
+	line-height: 1.5em;
+	font-family: Georgia, "New Times Roman", serif; */
+	font: normal .75em/1.5em 'Elsie Swash Caps', cursive;
+	color: #777;
+	text-align: right;
+}
+
+/* class selectors (applied to as many elements as i want) */
+
+/* to start a class, i need to start with a . */
+
+.milk-text {
+	font: bold 2.6em 'Elsie Swash Caps', cursive;
+	color: white;
+	text-shadow: 0 2px 3px #000;
+}
+
+/* ID selectors (only apply to one unique element per page) */
+
+#logo {
+	background: aqua;
+}
+
+
+/* Descendent Selector (style something that follows another element*/
+
+#logo h1 { /* will only select h1's if they are inside the id=logo*/
+	font-family: 'Clicker Script', cursive;
+
+}
+
+#logo h2 {
+	font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Psuedo Selector (looking at event-states... like links (visited, clicked, etc.)*/ 
+
+#details a:link, #details a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#details a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+#details a:active {
+	color: red;
+}
