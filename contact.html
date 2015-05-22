@@ -24,5 +24,17 @@
 
 	<!-- contact form -->
 
+	<form action="#" method="post"> <!-- the action is where we want to send the info -->
+		<label for ="fullname">Name</label> <!-- the for attribute connected this to the fullname element moving the cursor into the fullname text box when it is clicked -->
+		<input type="text" id="fullname" name="fullname" placeholder="your name" required>
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" placeholder="gimmie email" required> <!-- type email gives validation that it is an email address. -->
+		<label for="phone">Phone</label>
+		<input type="tel" id="phone" name="phone" placeholder="your phone # (optional)"> <!--the type tel brings up the numeric keypad on cell phones -->
+		<label for="message">Message</label>
+		<textarea id="message" name="message" rows="10"></textarea> <!-- rows shows how many rows until a user has to scroll -->
+		<input type="submit" value="send">
+	</form>
+
 </body>
 </html>
